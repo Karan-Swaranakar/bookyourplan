@@ -88,6 +88,9 @@ h1 {
 .category p {
   margin-top: .5rem;
 }
+.defult { 
+  display: block;
+}
 .featured {
   padding: 0 20px;
   margin-bottom: 1rem;
@@ -133,6 +136,17 @@ h1 {
   color: #6b7280;
 }
 
+.all-cards,
+.Birthday,
+.Wedding,
+.Event,
+.Corporate {
+  display: none;
+}
+.all-cards {
+  display: block;
+}
+
 .bottom-nav {
   position: fixed;
   bottom: 0px;
@@ -168,7 +182,47 @@ h1 {
 .nav-item:active{
   transform: scale(0.95);
 }
-.nav-item.active {
+.active  {
   color: #3b82f6;
   font-weight: 600;
+}
+.active a {
+  color: #3b82f6;
+  font-weight: 600;
+}
+/* Booking */
+.booking{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 10px;
+  padding: 0 40px;
+}
+a{
+ text-decoration: none;
+ color: #6b7280;
+}
+.activeList{
+      width: 100%;
+    background-color: #fff;
+    padding: 20px 17px;
+    border-radius: 10px;
+    box-shadow: inset -5px 0 0 0 #3b82f6;
+  }
+  .activeList h4{ 
+   padding: 0 0 5px 0;
+  }
+  .activeList span{ 
+   font-size: 15px;
+  }
+  .activeList:nth-child(2){
+  box-shadow: inset -5px 0 0 0 #00ff00d5;
+  
+}
+
+.disable{
+  /* opacity: 60%; */
+  box-shadow: inset -5px 0 0 0 #808080;
+  color: #808080 ;
 }
